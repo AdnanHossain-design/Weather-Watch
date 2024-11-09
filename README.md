@@ -1,0 +1,1 @@
+Up to this point I have only done the back end programming to connect to weather API and used the coordinates of Boston to run the code. Next steps for me is to continue working on the front end and upload a data base of cities all over the world.
