@@ -11,10 +11,10 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/Header"
             android:layout_width="295dp"
             android:layout_height="58dp"
-            android:text="Header"
+            android:text="Weather Watch"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="34sp"
@@ -24,17 +24,42 @@
             app:layout_constraintHorizontal_bias="0.535"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.049"
-            tools:text="Weather Watch" />
+            app:layout_constraintVertical_bias="0.049" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/CountryList"
             android:layout_width="316dp"
             android:layout_height="51dp"
             android:layout_marginTop="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.305"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintTop_toBottomOf="@+id/Header" />
+
+        <Spinner
+            android:id="@+id/CityList"
+            android:layout_width="316dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.305"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CountryList" />
+
+        <TextView
+            android:id="@+id/weatherStatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Weather will be displayed here"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CityList"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
